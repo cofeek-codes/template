@@ -2,6 +2,7 @@
 @import "_header";
 @import "_main";
 @import "_footer";
+@import "_ui";
 @import "_media";
 @import "_fonts";
 @import "_normalize";
@@ -11,7 +12,7 @@
 body {
     font-family: $ff;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1;
     font-weight: normal;
     color: black;
@@ -24,9 +25,10 @@ img {
     height: auto;
 }
 // img-to-fit-container
+
 //  wrapper
 .wrapper {
-    max-width: 1060px; // max-width
+    max-width: 0px; //! max-width
     margin: 0 auto;
     padding: 0 15px;
 }

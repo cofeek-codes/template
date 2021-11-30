@@ -1,13 +1,16 @@
 // media variables
-$mdf: 960px;
-$mdb: 767px;
+$mdunn: 960px;
 $mdt: 500px;
 $mdf:320px;
 // media variables
 
+//! burger variable
+$mdb: 767px;
+//! burger variable
+
 
 //! media
-@media (max-width:$mdb) {
+@media (max-width:$mdb) { // display burger width
     // "fall-out" menu
 
     .header__burger {
