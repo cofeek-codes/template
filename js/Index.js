@@ -35,3 +35,28 @@ if (isMobile.any()) {
 }
 
 
+
+(function () {
+    const burgeritem = document.querySelector ('.burger');
+    const menu = document.querySelector ('.nav');
+    const menulinks = document.querySelectorAll ('.nav__list-item-link');
+    //! CLOSING
+    const menuclose = document.querySelector ('.header__nav-close');
+    //!
+    burgeritem.addEventListener('click', () => {
+       menu.classList.add('nav-active');
+    });
+    //! CLOSING
+    menuclose.addEventListener('click', () => {
+        menu.classList.remove ('nav-active');
+    });
+    // close on click-on-link 
+if (window.innerWidth < 768) {
+    for (let i = 0; i < menulinks.length; i += 1) {
+        menulinks[i].addEventListener('click', () => {
+            menu.classList.remove ('nav-active');
+        });
+    }
+}
+}());
+
