@@ -27,12 +27,11 @@ img {
     height: auto;
 }
 
-$fixedheaderheight: 58px;
+$fixedheaderheight: '';
 
 .wrapper {
-    max-width: 1720px;
+    max-width: px;
     margin: 0 auto;
-    padding: 0 15px;
     padding-top: $fixedheaderheight + 0px;
     min-height: 100%;
 }
