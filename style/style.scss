@@ -1,9 +1,40 @@
 @import '_header';
 @import '_burger';
 // main
-
+@import '_main';
 // main
 @import '_footer';
 @import '_icons';
 @import '_fonts';
 @import '_normalize';
+
+
+$dc:black; 
+
+
+body {
+    font-family: $ff;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $dc;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+$fixedheaderheight: 58px;
+
+.wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: $fixedheaderheight + 0px;
+    min-height: 100%;
+}
+.header {
+    min-height: $fixedheaderheight;
+}
