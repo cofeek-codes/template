@@ -16,24 +16,22 @@ const isMobile={Android:function(){return navigator.userAgent.match(/Android/i)}
 
 
 if (isMobile.any()) {
-    document.body.classList.add('__mobile');
+    document.body.classList.add('_mobile');
+
+    let menuarrows = document.querySelectorAll('.link-arrow');
+    if (menuarrows.length>0) {
+        for (let index = 0; index < menuarrows.length; index++) {
+            const menuarrow = menuarrows[index];
+            menuarrow.addEventListener('click', () => {
+                menuarrow.parentElement.classList.toggle('__active');
+            })
+            
+        }
+    }
+
 }else {
-    document.body.classList.add('__pc');
+    document.body.classList.add('_pc');
     
 }
 
 
-//  ADD
-
-(function () {
-    const start = document.querySelector('.sub-menu');
-    start = addEventListener('hover', () => {
-        classList.add('sub-menu__active')
-    })
-}());
-
-
-
-
-
-//  ADD
