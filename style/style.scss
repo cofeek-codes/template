@@ -1,23 +1,22 @@
-@import '_header';
-@import '_burger';
+@import "_header";
+@import "_burger";
 // main
-@import '_main';
+@import "_main";
 // main
-@import '_footer';
-@import '_icons';
-@import '_fonts';
-@import '_normalize';
-
-
-$dc:black; 
-
+@import "_footer";
+@import "_avs";
+@import "_converter";
+@import "_adaptive";
+@import "_icons";
+@import "_fonts";
+@import "_normalize";
 
 body {
     font-family: $ff;
     line-height: 1;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     color: $dc;
 }
 
@@ -26,10 +25,8 @@ img {
     height: auto;
 }
 
-$fixedheaderheight: 58px;
-
 .wrapper {
-    max-width: 1720px;
+    max-width: $wrapper + px;
     margin: 0 auto;
     padding: 0 15px;
     padding-top: $fixedheaderheight + 0px;
